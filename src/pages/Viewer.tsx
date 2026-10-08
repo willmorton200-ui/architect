@@ -4,8 +4,8 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { ArrowLeft, Home, ZoomIn, ZoomOut, Maximize2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { projects } from '../data';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 
 // Set up the PDF worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -18,8 +18,7 @@ export function Viewer() {
   const drawingIndex = project?.drawings.findIndex(d => d.id === drawingId) ?? -1;
   const drawing = drawingIndex >= 0 && project ? project.drawings[drawingIndex] : null;
 
-  const [numPages, setNumPages] = useState<number>();
-  const [pageNumber, setPageNumber] = useState<number>(1);
+  const [pageNumber] = useState<number>(1);
   const [loading, setLoading] = useState(true);
 
   // Keyboard navigation for PDF pages
@@ -54,8 +53,7 @@ export function Viewer() {
     }
   };
 
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-    setNumPages(numPages);
+  function onDocumentLoadSuccess(): void {
     setLoading(false);
   }
 
