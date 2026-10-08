@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { Document, Page, pdfjs } from 'react-pdf';
@@ -23,6 +23,24 @@ export function Viewer() {
 
   const [pageNumber] = useState<number>(1);
   const [loading, setLoading] = useState(true);
+  
+  const [dpr, setDpr] = useState(window.devicePixelRatio || 1);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleTransform = (ref: any) => {
+    const scale = ref.state.scale;
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    
+    timeoutRef.current = setTimeout(() => {
+      const baseDpr = window.devicePixelRatio || 1;
+      // Dynamically calculate internal resolution based on CSS zoom level.
+      // This prevents thin lines from disappearing when zoomed out, while remaining razor sharp when zoomed in.
+      // Add a 1.5x multiplier to ensure vectors are rendered denser than required for extra crispness.
+      const newDpr = Math.max(baseDpr, baseDpr * scale * 1.5);
+      // Cap at 6 to prevent browser crash from massive canvas memory allocation.
+      setDpr(Math.min(newDpr, 6));
+    }, 250); // debounce to avoid stuttering during smooth zooming
+  };
 
   // Keyboard navigation for PDF pages
   useEffect(() => {
@@ -105,11 +123,12 @@ export function Viewer() {
       <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', cursor: 'grab' }}>
         <TransformWrapper
           initialScale={1}
-          minScale={0.5}
-          maxScale={5}
+          minScale={0.1}
+          maxScale={10}
           centerOnInit={true}
           wheel={{ step: 0.1 }}
           panning={{ velocityDisabled: false }}
+          onTransform={handleTransform}
         >
           {({ zoomIn, zoomOut, resetTransform }) => (
             <>
@@ -140,8 +159,8 @@ export function Viewer() {
                       renderAnnotationLayer={false}
                       className="no-select no-drag"
                       canvasBackground="white"
-                      scale={2}
-                      devicePixelRatio={Math.max(window.devicePixelRatio || 1, 3)} // High resolution for reading numbers
+                      scale={1}
+                      devicePixelRatio={dpr}
                     />
                   )}
                 </Document>
