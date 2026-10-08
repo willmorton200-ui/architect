@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { ProjectDetails } from './pages/ProjectDetails';
 import { Viewer } from './pages/Viewer';
@@ -42,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="no-select no-drag">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -50,7 +50,7 @@ function App() {
           <Route path="/project/:projectId/drawing/:drawingId" element={<Viewer />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
