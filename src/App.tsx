@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { ErrorBoundary } from 'react-error-boundary';
 import { Home } from './pages/Home';
 import { ProjectDetails } from './pages/ProjectDetails';
 import { Viewer } from './pages/Viewer';
@@ -44,11 +45,13 @@ function App() {
   return (
     <HashRouter>
       <div className="no-select no-drag">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project/:id" element={<ProjectDetails />} />
-          <Route path="/project/:projectId/drawing/:drawingId" element={<Viewer />} />
-        </Routes>
+        <ErrorBoundary fallbackRender={({ error }) => <div style={{ color: 'red', padding: 20 }}><h1>Критическая ошибка</h1><pre>{error instanceof Error ? error.message : String(error)}</pre></div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project/:id" element={<ProjectDetails />} />
+            <Route path="/project/:projectId/drawing/:drawingId" element={<Viewer />} />
+          </Routes>
+        </ErrorBoundary>
       </div>
     </HashRouter>
   );

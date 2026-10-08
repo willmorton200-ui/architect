@@ -127,7 +127,7 @@ export function Viewer() {
 
               <TransformComponent wrapperStyle={{ width: '100%', height: '100%' }}>
                 <Document
-                  file={drawing.pdfUrl}
+                  file={`${import.meta.env.BASE_URL}${drawing.pdfUrl.replace(/^\//, '')}`}
                   onLoadSuccess={onDocumentLoadSuccess}
                   loading={<div style={{ color: 'white' }}>Загрузка чертежа...</div>}
                   error={<div style={{ color: '#ff6b6b' }}>Ошибка загрузки PDF. Убедитесь, что файл существует.</div>}
