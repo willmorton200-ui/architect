@@ -25,7 +25,17 @@ export function Viewer() {
   const [loading, setLoading] = useState(true);
   
   const [dpr, setDpr] = useState(window.devicePixelRatio || 1);
+  const [pdfDimensions, setPdfDimensions] = useState({ width: window.innerWidth * 0.9, height: window.innerHeight * 0.85 });
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setPdfDimensions({ width: window.innerWidth * 0.9, height: window.innerHeight * 0.85 });
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleTransform = (ref: any) => {
     const scale = ref.state.scale;
@@ -159,7 +169,8 @@ export function Viewer() {
                       renderAnnotationLayer={false}
                       className="no-select no-drag"
                       canvasBackground="white"
-                      scale={1}
+                      width={pdfDimensions.width}
+                      height={pdfDimensions.height}
                       devicePixelRatio={dpr}
                     />
                   )}
