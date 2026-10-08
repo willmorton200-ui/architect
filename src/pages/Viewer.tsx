@@ -139,8 +139,7 @@ export function Viewer() {
                       renderTextLayer={false} 
                       renderAnnotationLayer={false}
                       className="no-select no-drag"
-                      // Make canvas unselectable and undraggable
-                      canvasBackground="transparent"
+                      canvasBackground="white"
                       devicePixelRatio={window.devicePixelRatio || 2} // High quality rendering
                     />
                   )}
