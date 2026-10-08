@@ -140,7 +140,8 @@ export function Viewer() {
                       renderAnnotationLayer={false}
                       className="no-select no-drag"
                       canvasBackground="white"
-                      devicePixelRatio={window.devicePixelRatio || 2} // High quality rendering
+                      scale={2}
+                      devicePixelRatio={Math.max(window.devicePixelRatio || 1, 3)} // High resolution for reading numbers
                     />
                   )}
                 </Document>
