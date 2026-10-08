@@ -88,11 +88,22 @@ h1, h2, h3, h4 {
   margin-top: 0.25rem;
 }
 
-/* Cards Grid */
+/* Cards Grid - Masonry Layout */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  column-count: 3;
+  column-gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+    column-count: 1;
+  }
 }
 
 .card {
@@ -105,6 +116,9 @@ h1, h2, h3, h4 {
   text-decoration: none;
   color: inherit;
   display: block;
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .card:hover {
@@ -114,16 +128,16 @@ h1, h2, h3, h4 {
 }
 
 .card-image-container {
-  aspect-ratio: 16/9;
   background-color: #111;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 .card-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   opacity: 0.8;
   transition: opacity 0.3s ease, transform 0.5s ease;
 }
