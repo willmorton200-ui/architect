@@ -65,7 +65,7 @@ export const projects: Project[] = [
   },
   {
     id: "06-0048",
-    title: "Объект 06-0048-20",
+    title: '"Библиотека им. Ленина" Воздвиженка1',
     description: "Архитектурные решения",
     coverImage: "Vozdvigenka1/Vozdvigenka1.jpg",
     drawings: [
