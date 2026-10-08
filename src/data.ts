@@ -16,14 +16,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "gr2-ar",
-    title: "Объект GR2-АР",
+    title: "Строительство двухэтажного жилого дома г. Николаев",
     description: "Архитектурные решения",
-    coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+    coverImage: "/gp2-nikolaev/oblogka_Nik.JPG",
     drawings: [
-      { id: "gr2-53", title: "Чертеж [53]", pdfUrl: "/GR2-АР[53]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "gr2-54", title: "Чертеж [54]", pdfUrl: "/GR2-АР[54]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "gr2-55", title: "Чертеж [55]", pdfUrl: "/GR2-АР[55]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "gr2-56", title: "Чертеж [56]", pdfUrl: "/GR2-АР[56]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "gr2-53", title: "Чертеж [53]", pdfUrl: "/gp2-nikolaev/GR2-АР[53]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "gr2-54", title: "Чертеж [54]", pdfUrl: "/gp2-nikolaev/GR2-АР[54]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "gr2-55", title: "Чертеж [55]", pdfUrl: "/gp2-nikolaev/GR2-АР[55]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "gr2-56", title: "Чертеж [56]", pdfUrl: "/gp2-nikolaev/GR2-АР[56]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
     ]
   },
   {
