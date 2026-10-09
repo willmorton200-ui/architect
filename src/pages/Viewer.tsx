@@ -136,7 +136,7 @@ export function Viewer() {
           minScale={0.1}
           maxScale={10}
           centerOnInit={true}
-          wheel={{ step: 0.1 }}
+          wheel={{ step: 0.04 }}
           panning={{ velocityDisabled: false }}
           onTransform={handleTransform}
         >
