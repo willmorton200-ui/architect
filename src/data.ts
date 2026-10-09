@@ -28,16 +28,16 @@ export const projects: Project[] = [
   },
   {
     id: "mp-1535",
-    title: "Проект MP_1535",
+    title: 'Гостиница "приморская" г. Сочи',
     description: "Рабочая документация",
-    coverImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop",
+    coverImage: "Primorskaya/Vid1.JPG",
     drawings: [
-      { id: "mp-73", title: "Лист 73", pdfUrl: "MP_1535_03_\ufffd\ufffd1 73.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-74", title: "Лист 74", pdfUrl: "MP_1535_03_\ufffd\ufffd1 74.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-75", title: "Лист 75", pdfUrl: "MP_1535_03_\ufffd\ufffd1 75.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-76", title: "Лист 76", pdfUrl: "MP_1535_03_\ufffd\ufffd1 76.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-77", title: "Лист 77", pdfUrl: "MP_1535_03_\ufffd\ufffd1 77.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-78", title: "Лист 78", pdfUrl: "MP_1535_03_\ufffd\ufffd1 78.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "mp-73", title: "Лист 73", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 73.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "mp-74", title: "Лист 74", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 74.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "mp-75", title: "Лист 75", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 75.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "mp-76", title: "Лист 76", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 76.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "mp-77", title: "Лист 77", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 77.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "mp-78", title: "Лист 78", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 78.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
     ]
   },
   {
