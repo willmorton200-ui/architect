@@ -56,11 +56,11 @@ export const projects: Project[] = [
   },
   {
     id: "ca-84",
-    title: "Объект 3 СА-84-19",
+    title: "Детский сад (ДОО) на 275 мест г. Москва, пос. Рязановское",
     description: "Разное",
-    coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+    coverImage: "pos_Razan_DOO/obl6.JPG",
     drawings: [
-      { id: "ca-23", title: "Лист 23", pdfUrl: "3 СА-84-19_19-АР_Изм3 23.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+      { id: "ca-23", title: "Лист 23", pdfUrl: "pos_Razan_DOO/3 СА-84-19_19-АР_Изм3 23.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
     ]
   },
   {
