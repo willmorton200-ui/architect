@@ -48,7 +48,7 @@ export const projects: Project[] = [
   },
   {
     "id": "istra",
-    "title": "Istra",
+    "title": "Индивидуальный 2х этажный жилой дом. Московская область, коттеджный поселок Истра",
     "description": "Архитектурные решения",
     "coverImage": "Istra/obl6.JPG",
     "drawings": [
