@@ -60,15 +60,295 @@ export const projects: Project[] = [
       {
         "id": "Istra-1",
         "title": "Лист 1",
-        "pdfUrl": "Istra/ARP 24.pdf",
+        "pdfUrl": "Istra/ARP.pdf",
         "pageNumber": 1,
         "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
       },
       {
         "id": "Istra-2",
         "title": "Лист 2",
-        "pdfUrl": "Istra/ARP 25.pdf",
-        "pageNumber": 1,
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 2,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-3",
+        "title": "Лист 3",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 3,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-4",
+        "title": "Лист 4",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 4,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-5",
+        "title": "Лист 5",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 5,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-6",
+        "title": "Лист 6",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 6,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-7",
+        "title": "Лист 7",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 7,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-8",
+        "title": "Лист 8",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 8,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-9",
+        "title": "Лист 9",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 9,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-10",
+        "title": "Лист 10",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 10,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-11",
+        "title": "Лист 11",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 11,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-12",
+        "title": "Лист 12",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 12,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-13",
+        "title": "Лист 13",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 13,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-14",
+        "title": "Лист 14",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 14,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-15",
+        "title": "Лист 15",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 15,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-16",
+        "title": "Лист 16",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 16,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-17",
+        "title": "Лист 17",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 17,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-18",
+        "title": "Лист 18",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 18,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-19",
+        "title": "Лист 19",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 19,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-20",
+        "title": "Лист 20",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 20,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-21",
+        "title": "Лист 21",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 21,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-22",
+        "title": "Лист 22",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 22,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-23",
+        "title": "Лист 23",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 23,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-24",
+        "title": "Лист 24",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 24,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-25",
+        "title": "Лист 25",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 25,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-26",
+        "title": "Лист 26",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 26,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-27",
+        "title": "Лист 27",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 27,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-28",
+        "title": "Лист 28",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 28,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-29",
+        "title": "Лист 29",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 29,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-30",
+        "title": "Лист 30",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 30,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-31",
+        "title": "Лист 31",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 31,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-32",
+        "title": "Лист 32",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 32,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-33",
+        "title": "Лист 33",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 33,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-34",
+        "title": "Лист 34",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 34,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-35",
+        "title": "Лист 35",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 35,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-36",
+        "title": "Лист 36",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 36,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-37",
+        "title": "Лист 37",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 37,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-38",
+        "title": "Лист 38",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 38,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-39",
+        "title": "Лист 39",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 39,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-40",
+        "title": "Лист 40",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 40,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-41",
+        "title": "Лист 41",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 41,
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-42",
+        "title": "Лист 42",
+        "pdfUrl": "Istra/ARP.pdf",
+        "pageNumber": 42,
         "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
       }
     ]
