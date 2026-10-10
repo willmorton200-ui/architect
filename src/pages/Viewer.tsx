@@ -25,13 +25,13 @@ export function Viewer() {
   const [loading, setLoading] = useState(true);
   
   const [dpr, setDpr] = useState(window.devicePixelRatio || 1);
-  const [pdfDimensions, setPdfDimensions] = useState({ width: window.innerWidth, height: window.innerHeight - 80 });
+  const [pageScale, setPageScale] = useState<number>(1);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Handle window resize
+  // Handle window resize (re-calculate scale if needed, but react-zoom-pan-pinch handles zooming anyway)
   useEffect(() => {
     const handleResize = () => {
-      setPdfDimensions({ width: window.innerWidth, height: window.innerHeight - 80 });
+      // Just force a re-render or let it be
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -87,19 +87,25 @@ export function Viewer() {
     }
   };
 
-  function onDocumentLoadSuccess(): void {
-    setLoading(false);
+  function onPageLoadSuccess(page: any): void {
+    const viewport = page.originalWindow || page.getViewport({ scale: 1 });
+    const availableWidth = window.innerWidth * 0.95;
+    const availableHeight = (window.innerHeight - 80) * 0.95;
+    
+    const scaleX = availableWidth / viewport.width;
+    const scaleY = availableHeight / viewport.height;
+    setPageScale(Math.min(scaleX, scaleY));
   }
 
-  // Generate watermark pattern
+  // Generate watermark pattern (increased count to cover 200% area)
   const watermarks = useMemo(() => {
-    return Array.from({ length: 20 }).map((_, i) => (
+    return Array.from({ length: 150 }).map((_, i) => (
       <div key={i} className="watermark-text">АЛЕКСЕЙ | АРХИТЕКТОР</div>
     ));
   }, []);
 
   return (
-    <div className="viewer-container animate-fade-in">
+    <div className="viewer-container animate-fade-in" onContextMenu={(e) => e.preventDefault()}>
       {/* Security Overlay */}
       <div className="watermark-overlay no-select no-drag">
         {watermarks}
@@ -166,7 +172,7 @@ export function Viewer() {
               <TransformComponent wrapperStyle={{ width: '100%', height: '100%' }}>
                 <Document
                   file={`${import.meta.env.BASE_URL}${drawing.pdfUrl.replace(/^\//, '')}`}
-                  onLoadSuccess={onDocumentLoadSuccess}
+                  onLoadSuccess={() => setLoading(false)}
                   loading={<div style={{ color: 'white' }}>Загрузка чертежа...</div>}
                   error={<div style={{ color: '#ff6b6b' }}>Ошибка загрузки PDF. Убедитесь, что файл существует.</div>}
                   className="no-select no-drag"
@@ -178,9 +184,9 @@ export function Viewer() {
                       renderAnnotationLayer={false}
                       className="no-select no-drag"
                       canvasBackground="white"
-                      width={pdfDimensions.width}
-                      height={pdfDimensions.height}
+                      scale={pageScale}
                       devicePixelRatio={dpr}
+                      onLoadSuccess={onPageLoadSuccess}
                     />
                   )}
                 </Document>
