@@ -97,10 +97,10 @@ export function Viewer() {
     setPageScale(Math.min(scaleX, scaleY));
   }
 
-  // Generate watermark pattern (increased count to cover 200% area)
+  // Generate watermark pattern
   const watermarks = useMemo(() => {
-    return Array.from({ length: 150 }).map((_, i) => (
-      <div key={i} className="watermark-text">АЛЕКСЕЙ | АРХИТЕКТОР</div>
+    return Array.from({ length: 20 }).map((_, i) => (
+      <div key={i} className="watermark-text">для ознакомления</div>
     ));
   }, []);
 
