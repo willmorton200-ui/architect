@@ -259,10 +259,10 @@ h1, h2, h3, h4 {
 /* Watermark */
 .watermark-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
   pointer-events: none;
   z-index: 5;
   display: flex;
@@ -270,15 +270,17 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  opacity: 0.05;
+  opacity: 0.08; /* Pale but visible */
+  mix-blend-mode: multiply; /* Ensures it is visible on white background and invisible on black */
 }
 
 .watermark-text {
-  font-size: 2rem;
-  font-weight: bold;
-  transform: rotate(-45deg);
-  margin: 4rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  transform: rotate(-30deg);
+  margin: 2rem;
   white-space: nowrap;
+  color: #000;
 }
 
 /* Custom Scrollbar */
