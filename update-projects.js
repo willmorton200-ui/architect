@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { PDFDocument } from 'pdf-lib';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -61,14 +62,39 @@ async function main() {
     let pdfFiles = await getFiles(folderPath, ['.pdf']);
     pdfFiles.sort(naturalSort); // Sort them so sheets are in logical order
 
-    const drawings = pdfFiles.map((pdf, index) => {
-      return {
-        id: `${folder}-${index + 1}`,
-        title: `Лист ${index + 1}`, // Can be improved later if names are needed
-        pdfUrl: `${folder}/${pdf}`,
-        thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
-      };
-    });
+    const drawings = [];
+    let globalSheetIndex = 1;
+
+    for (const pdf of pdfFiles) {
+      const pdfPath = path.join(folderPath, pdf);
+      try {
+        const pdfBytes = await fs.readFile(pdfPath);
+        const pdfDoc = await PDFDocument.load(pdfBytes, { ignoreEncryption: true });
+        const pageCount = pdfDoc.getPageCount();
+
+        for (let i = 1; i <= pageCount; i++) {
+          drawings.push({
+            id: `${folder}-${globalSheetIndex}`,
+            title: `Лист ${globalSheetIndex}`,
+            pdfUrl: `${folder}/${pdf}`,
+            pageNumber: i,
+            thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+          });
+          globalSheetIndex++;
+        }
+      } catch (err) {
+        console.error(`Ошибка при чтении ${pdfPath}:`, err.message);
+        // Fallback to 1 page if parsing fails
+        drawings.push({
+          id: `${folder}-${globalSheetIndex}`,
+          title: `Лист ${globalSheetIndex}`,
+          pdfUrl: `${folder}/${pdf}`,
+          pageNumber: 1,
+          thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+        });
+        globalSheetIndex++;
+      }
+    }
 
     projects.push({
       id: folder.toLowerCase(),
@@ -84,6 +110,7 @@ async function main() {
   id: string;
   title: string;
   pdfUrl: string;
+  pageNumber?: number;
   thumbnailUrl: string; // Since we don't have real thumbnails yet, we'll use a placeholder or the cover
 }
 

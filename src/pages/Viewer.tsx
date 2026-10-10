@@ -21,7 +21,7 @@ export function Viewer() {
   const drawingIndex = project?.drawings.findIndex(d => d.id === drawingId) ?? -1;
   const drawing = drawingIndex >= 0 && project ? project.drawings[drawingIndex] : null;
 
-  const [pageNumber] = useState<number>(1);
+  const pageNumber = drawing?.pageNumber || 1;
   const [loading, setLoading] = useState(true);
   
   const [dpr, setDpr] = useState(window.devicePixelRatio || 1);
