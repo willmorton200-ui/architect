@@ -47,6 +47,26 @@ export const projects: Project[] = [
     ]
   },
   {
+    "id": "istra",
+    "title": "Istra",
+    "description": "Архитектурные решения",
+    "coverImage": "Istra/obl6.JPG",
+    "drawings": [
+      {
+        "id": "Istra-1",
+        "title": "Лист 1",
+        "pdfUrl": "Istra/ARP 24.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Istra-2",
+        "title": "Лист 2",
+        "pdfUrl": "Istra/ARP 25.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      }
+    ]
+  },
+  {
     "id": "pos_razan_doo",
     "title": "Детский сад (ДОО) на 275 мест г. Москва, пос. Рязановское",
     "description": "Архитектурные решения",
@@ -150,7 +170,7 @@ export const projects: Project[] = [
   },
   {
     "id": "vozdvigenka1",
-    "title": "\"Библиотека им. Ленина\" Воздвиженка1",
+    "title": "\"Библиотека им. Ленина\" г. Москва, Воздвиженка 1",
     "description": "Архитектурные решения",
     "coverImage": "Vozdvigenka1/Vozdvigenka1.jpg",
     "drawings": [
