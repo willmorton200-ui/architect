@@ -7,6 +7,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "update": "node update-projects.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",

@@ -15,76 +15,241 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "gr2-ar",
-    title: "Строительство двухэтажного жилого дома г. Николаев",
-    description: "Архитектурные решения",
-    coverImage: "gp2-nikolaev/oblogka_Nik.JPG",
-    drawings: [
-      { id: "gr2-53", title: "Чертеж [53]", pdfUrl: "gp2-nikolaev/GR2-АР[53]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "gr2-54", title: "Чертеж [54]", pdfUrl: "gp2-nikolaev/GR2-АР[54]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "gr2-55", title: "Чертеж [55]", pdfUrl: "gp2-nikolaev/GR2-АР[55]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "gr2-56", title: "Чертеж [56]", pdfUrl: "gp2-nikolaev/GR2-АР[56]a3.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+    "id": "gp2-nikolaev",
+    "title": "Строительство двухэтажного жилого дома г. Николаев",
+    "description": "Архитектурные решения",
+    "coverImage": "gp2-nikolaev/oblogka_Nik.JPG",
+    "drawings": [
+      {
+        "id": "gp2-nikolaev-1",
+        "title": "Лист 1",
+        "pdfUrl": "gp2-nikolaev/GR2-АР[53]a3.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "gp2-nikolaev-2",
+        "title": "Лист 2",
+        "pdfUrl": "gp2-nikolaev/GR2-АР[54]a3.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "gp2-nikolaev-3",
+        "title": "Лист 3",
+        "pdfUrl": "gp2-nikolaev/GR2-АР[55]a3.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "gp2-nikolaev-4",
+        "title": "Лист 4",
+        "pdfUrl": "gp2-nikolaev/GR2-АР[56]a3.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      }
     ]
   },
   {
-    id: "mp-1535",
-    title: 'Гостиница "приморская" г. Сочи',
-    description: "Рабочая документация",
-    coverImage: "Primorskaya/Vid1.JPG",
-    drawings: [
-      { id: "mp-73", title: "Лист 73", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 73.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-74", title: "Лист 74", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 74.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-75", title: "Лист 75", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 75.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-76", title: "Лист 76", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 76.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-77", title: "Лист 77", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 77.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "mp-78", title: "Лист 78", pdfUrl: "Primorskaya/MP_1535_03_\ufffd\ufffd1 78.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+    "id": "pos_razan_doo",
+    "title": "Детский сад (ДОО) на 275 мест г. Москва, пос. Рязановское",
+    "description": "Архитектурные решения",
+    "coverImage": "pos_Razan_DOO/obl6.JPG",
+    "drawings": [
+      {
+        "id": "pos_Razan_DOO-1",
+        "title": "Лист 1",
+        "pdfUrl": "pos_Razan_DOO/3 СА-84-19_19-АР_Изм3 23.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      }
     ]
   },
   {
-    id: "pd-3",
-    title: "Театр Оперы и Балета г. Севастополь",
-    description: "Проектная документация, изм. 18",
-    coverImage: "TOiB/photo_2026-09-30_20-51-09.jpg",
-    drawings: [
-      { id: "pd-4", title: "Лист 4", pdfUrl: "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 4.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "pd-16", title: "Лист 16", pdfUrl: "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 16.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "pd-17", title: "Лист 17", pdfUrl: "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 17.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "pd-18", title: "Лист 18", pdfUrl: "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 18.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "pd-19", title: "Лист 19", pdfUrl: "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 19.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "pd-20", title: "Лист 20", pdfUrl: "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 20.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+    "id": "primorskaya",
+    "title": "Гостиница \"приморская\" г. Сочи",
+    "description": "Архитектурные решения",
+    "coverImage": "Primorskaya/Vid1.JPG",
+    "drawings": [
+      {
+        "id": "Primorskaya-1",
+        "title": "Лист 1",
+        "pdfUrl": "Primorskaya/MP_1535_03_��1 73.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Primorskaya-2",
+        "title": "Лист 2",
+        "pdfUrl": "Primorskaya/MP_1535_03_��1 74.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Primorskaya-3",
+        "title": "Лист 3",
+        "pdfUrl": "Primorskaya/MP_1535_03_��1 75.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Primorskaya-4",
+        "title": "Лист 4",
+        "pdfUrl": "Primorskaya/MP_1535_03_��1 76.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Primorskaya-5",
+        "title": "Лист 5",
+        "pdfUrl": "Primorskaya/MP_1535_03_��1 77.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Primorskaya-6",
+        "title": "Лист 6",
+        "pdfUrl": "Primorskaya/MP_1535_03_��1 78.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      }
     ]
   },
   {
-    id: "ca-84",
-    title: "Детский сад (ДОО) на 275 мест г. Москва, пос. Рязановское",
-    description: "Разное",
-    coverImage: "pos_Razan_DOO/obl6.JPG",
-    drawings: [
-      { id: "ca-23", title: "Лист 23", pdfUrl: "pos_Razan_DOO/3 СА-84-19_19-АР_Изм3 23.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+    "id": "toib",
+    "title": "Театр Оперы и Балета г. Севастополь",
+    "description": "Архитектурные решения",
+    "coverImage": "TOiB/photo_2026-09-30_20-51-09.jpg",
+    "drawings": [
+      {
+        "id": "TOiB-1",
+        "title": "Лист 1",
+        "pdfUrl": "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 4.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "TOiB-2",
+        "title": "Лист 2",
+        "pdfUrl": "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 16.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "TOiB-3",
+        "title": "Лист 3",
+        "pdfUrl": "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 17.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "TOiB-4",
+        "title": "Лист 4",
+        "pdfUrl": "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 18.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "TOiB-5",
+        "title": "Лист 5",
+        "pdfUrl": "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 19.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "TOiB-6",
+        "title": "Лист 6",
+        "pdfUrl": "TOiB/Раздел_ПД_№3_Подраздел_ПД_№1_2_изм_18 (2) 20.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      }
     ]
   },
   {
-    id: "06-0048",
-    title: '"Библиотека им. Ленина" Воздвиженка1',
-    description: "Архитектурные решения",
-    coverImage: "Vozdvigenka1/Vozdvigenka1.jpg",
-    drawings: [
-      { id: "06-63", title: "Лист 63", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 63.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-64", title: "Лист 64", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 64.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-65", title: "Лист 65", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 65.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-66", title: "Лист 66", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 66.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-67", title: "Лист 67", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 67.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-68", title: "Лист 68", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 68.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-69", title: "Лист 69", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 69.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-70", title: "Лист 70", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 70.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-71", title: "Лист 71", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 71.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-72", title: "Лист 72", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 72.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-73", title: "Лист 73", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 73.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-74", title: "Лист 74", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 74.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-75", title: "Лист 75", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 75.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-76", title: "Лист 76", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 76.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-77", title: "Лист 77", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 77.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
-      { id: "06-78", title: "Лист 78", pdfUrl: "Vozdvigenka1/06-0048-20 АРизм4000 78.pdf", thumbnailUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" },
+    "id": "vozdvigenka1",
+    "title": "\"Библиотека им. Ленина\" Воздвиженка1",
+    "description": "Архитектурные решения",
+    "coverImage": "Vozdvigenka1/Vozdvigenka1.jpg",
+    "drawings": [
+      {
+        "id": "Vozdvigenka1-1",
+        "title": "Лист 1",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 63.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-2",
+        "title": "Лист 2",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 64.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-3",
+        "title": "Лист 3",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 65.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-4",
+        "title": "Лист 4",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 66.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-5",
+        "title": "Лист 5",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 67.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-6",
+        "title": "Лист 6",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 68.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-7",
+        "title": "Лист 7",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 69.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-8",
+        "title": "Лист 8",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 70.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-9",
+        "title": "Лист 9",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 71.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-10",
+        "title": "Лист 10",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 72.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-11",
+        "title": "Лист 11",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 73.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-12",
+        "title": "Лист 12",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 74.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-13",
+        "title": "Лист 13",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 75.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-14",
+        "title": "Лист 14",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 76.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-15",
+        "title": "Лист 15",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 77.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        "id": "Vozdvigenka1-16",
+        "title": "Лист 16",
+        "pdfUrl": "Vozdvigenka1/06-0048-20 АРизм4000 78.pdf",
+        "thumbnailUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop"
+      }
     ]
   }
 ];
