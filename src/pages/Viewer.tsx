@@ -25,13 +25,13 @@ export function Viewer() {
   const [loading, setLoading] = useState(true);
   
   const [dpr, setDpr] = useState(window.devicePixelRatio || 1);
-  const [pdfDimensions, setPdfDimensions] = useState({ width: window.innerWidth * 0.9, height: window.innerHeight * 0.85 });
+  const [pdfDimensions, setPdfDimensions] = useState({ width: window.innerWidth, height: window.innerHeight - 80 });
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
-      setPdfDimensions({ width: window.innerWidth * 0.9, height: window.innerHeight * 0.85 });
+      setPdfDimensions({ width: window.innerWidth, height: window.innerHeight - 80 });
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -60,6 +60,9 @@ export function Viewer() {
       } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
         goToPrevDrawing();
       } else if (e.key === 'Escape') {
+        if (document.fullscreenElement) {
+          document.exitFullscreen().catch(() => {});
+        }
         navigate(`/project/${projectId}`);
       }
     };
@@ -104,10 +107,16 @@ export function Viewer() {
 
       <div className="viewer-header">
         <div style={{ display: 'flex', gap: '1rem' }}>
-          <button onClick={() => navigate(`/project/${projectId}`)} className="icon-btn" title="Назад к проекту">
+          <button onClick={() => {
+            if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+            navigate(`/project/${projectId}`);
+          }} className="icon-btn" title="Назад к проекту">
             <ArrowLeft size={24} />
           </button>
-          <button onClick={() => navigate('/')} className="icon-btn" title="На главную">
+          <button onClick={() => {
+            if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+            navigate('/');
+          }} className="icon-btn" title="На главную">
             <Home size={24} />
           </button>
         </div>

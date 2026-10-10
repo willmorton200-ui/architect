@@ -32,10 +32,20 @@ export function ProjectDetails() {
 
       <div className="grid">
         {project.drawings.map((drawing) => (
-          <Link 
-            to={`/project/${project.id}/drawing/${drawing.id}`} 
+          <div 
             key={drawing.id} 
             className="card"
+            style={{ cursor: 'pointer' }}
+            onClick={async () => {
+              try {
+                if (document.documentElement.requestFullscreen) {
+                  await document.documentElement.requestFullscreen();
+                }
+              } catch (err) {
+                console.log("Fullscreen request blocked or not supported", err);
+              }
+              navigate(`/project/${project.id}/drawing/${drawing.id}`);
+            }}
           >
             <div className="card-image-container">
               <img src={drawing.thumbnailUrl} alt={drawing.title} className="card-image" />
@@ -43,7 +53,7 @@ export function ProjectDetails() {
             <div className="card-content">
               <h3 className="card-title">{drawing.title}</h3>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </div>
